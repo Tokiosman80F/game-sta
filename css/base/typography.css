@@ -2,16 +2,16 @@
 @font-face {
   font-family: "ABeeZee";
   src:
-    url("../assets/fonts/ABeeZee.woff2") format("woff2"),
-    url("../assets/fonts/ABeeZee.otf") format("opentype"),
-    url("../assets/fonts/ABeeZee-Regular.ttf") format("truetype");
+    url("../../assets/fonts/ABeeZee.woff2") format("woff2"),
+    url("../../assets/fonts/ABeeZee.otf") format("opentype"),
+    url("../../assets/fonts/ABeeZee-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Euclid Circular A";
-  src: url("../assets/fonts/Euclid-Circular-A-Medium.ttf") format("truetype");
+  src: url("../../assets/fonts/Euclid-Circular-A-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -20,9 +20,9 @@
 @font-face {
   font-family: "Neue Machina";
   src:
-    url("../assets/fonts/Neue-Machina.woff") format("woff"),
-    url("../assets/fonts/Neue-Machina.woff2") format("woff2"),
-    url("../assets/fonts/Neue-Machina.otf") format("opentype");
+    url("../../assets/fonts/Neue-Machina.woff") format("woff"),
+    url("../../assets/fonts/Neue-Machina.woff2") format("woff2"),
+    url("../../assets/fonts/Neue-Machina.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;

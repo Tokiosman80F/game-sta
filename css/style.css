@@ -1,3 +1,8 @@
-@import "./reset.css";
-@import "./base.css";
-@import "./typography.css";
+/* base */
+@import "./base/reset.css";
+@import "./base/global.css";
+@import "./base/typography.css";
+/* component */
+@import "./components/button.css";
+/* layout */
+@import "./layout/header.css";

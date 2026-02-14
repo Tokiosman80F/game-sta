@@ -1,6 +1,16 @@
 /* Header Section */
 .gs-header {
-  background: rgb(63, 61, 61);
+  /* position: relative; */
+  background-image: url("../../assets/images/gs__hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* navbar */
+.gs-nav,
+.gs-hero {
+  position: relative;
+  z-index: 2;
 }
 .gs-nav {
   padding: 31px 32px 0 32px;
