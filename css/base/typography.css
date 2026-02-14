@@ -1,3 +1,9 @@
+/* 
+
+--font-primary: "ABeeZee", sans-serif;
+ --font-btn: "Euclid Circular A", sans-serif;
+*/
+
 /* AbeeZee font */
 @font-face {
   font-family: "ABeeZee";
@@ -9,6 +15,33 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Neue Machina";
+  src:
+    url("../../assets/fonts/Neue-Machina.woff") format("woff"),
+    url("../../assets/fonts/Neue-Machina.woff2") format("woff2"),
+    url("../../assets/fonts/Neue-Machina.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("../../assets/fonts/NeueMachina-Ultrabold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("../../assets/fonts/Euclid-Circular-A-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Euclid Circular A";
   src: url("../../assets/fonts/Euclid-Circular-A-Medium.ttf") format("truetype");
@@ -17,45 +50,26 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Neue Machina";
-  src:
-    url("../../assets/fonts/Neue-Machina.woff") format("woff"),
-    url("../../assets/fonts/Neue-Machina.woff2") format("woff2"),
-    url("../../assets/fonts/Neue-Machina.otf") format("opentype");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-.nav-font {
+.text-primary-normal {
   font-family: var(--font-primary);
   font-weight: normal;
-  font-size: 13px;
-  line-height: 1;
-  color: white;
 }
 
-.nav-btn-font {
-  font-family: var(--font-btn);
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 16px;
-  color: var(--color-btn);
-}
 .heading-1 {
   font-family: "Neue Machina", sans-serif;
   font-weight: 800;
-  font-size: 64px;
-  line-height: 110px;
-  color: #ffffff;
 }
-.text-1 {
+.text-abzee-normal {
   font-family: var(--font-primary);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
-  color: #ffffff;
 }
-.text-ecu-1 {
+.text-ecu-regular {
   font-family: var(--font-btn);
+  font-weight: 400;
+}
+.text-ecu-medium {
+  font-family: var(--font-btn);
+  font-weight: 500;
 }
