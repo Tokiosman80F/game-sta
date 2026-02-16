@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game STA</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="gs-header">
@@ -15,6 +15,12 @@
             <a href="" class="nav__logo">
               <img src="/assets/images/gs_logo.svg" alt="company logo" />
             </a>
+            <!-- mobile : menu toggle -->
+            <div class="gs-menu-toggle">
+              <button class="gs-menu-toogle-btn">
+                <img src="./assets/icon/hamburger.svg" alt="" id="menuToggle" />
+              </button>
+            </div>
             <!-- nav item -->
             <ul class="nav__list text-primary-normal">
               <li class="nav__item">
@@ -103,60 +109,150 @@
           </div>
           <div class="gs-hero__image">
             <div class="gs-hero__img-container">
-              <img
-                class="gs-hero__image-1"
-                src="./assets/images/hero-1.png"
-                alt=""
-              />
-              <img
-                class="gs-hero__image-2"
-                src="./assets/images/hero-2.png"
-                alt=""
-              />
-              <img
-                class="gs-hero__image-3"
-                src="./assets/images/hero-3.png"
-                alt=""
-              />
-              <img
-                class="gs-hero__image-4"
-                src="./assets/images/hero-4.png"
-                alt=""
-              />
-              <img
-                class="gs-hero__image-5"
-                src="./assets/images/hero-5.png"
-                alt=""
-              />
-              <img
-                class="gs-hero__image-6"
-                src="./assets/images/hero-6.png"
-                alt=""
-              />
-              <img
-                class="gs-hero__image-7"
-                src="./assets/images/hero-7.png"
-                alt=""
-              />
-              <img
-                class="gs-hero__image-8"
-                src="./assets/images/hero-8.png"
-                alt=""
-              />
-              <img
-                class="gs-hero__image-9"
-                src="./assets/images/hero-9.png"
-                alt=""
-              />
-              <img
-                class="gs-hero__image-mac"
-                src="./assets/images/macbook.png"
-                alt=""
-              />
+              <!-- hero 1 -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/hero-1-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-1"
+                  src="./assets/images/hero-1.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- hero 2 -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/hero-2-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-2"
+                  src="./assets/images/hero-2.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- hero 3 -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/hero-3-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-3"
+                  src="./assets/images/hero-3.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- hero 4 -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/hero-4-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-4"
+                  src="./assets/images/hero-4.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- hero 5 -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/hero-5-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-5"
+                  src="./assets/images/hero-5.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- hero 6 -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/hero-6-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-6"
+                  src="./assets/images/hero-6.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- hero 7 -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/hero-7-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-7"
+                  src="./assets/images/hero-7.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- hero 8 -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/hero-8-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-8"
+                  src="./assets/images/hero-8.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- hero 9 -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/hero-9-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-9"
+                  src="./assets/images/hero-9.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- macbook -->
+              <picture>
+                <source
+                  media="(max-width: 756px)"
+                  srcset="./assets/images/macbook-mbl.png"
+                />
+                <img
+                  class="gs-hero__image-mac"
+                  src="./assets/images/macbook.png"
+                  alt=""
+                />
+              </picture>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuBtn = document.querySelector(".gs-menu-toggle-btn");
+        const navList = document.querySelector(".nav__list");
+
+        menuBtn.addEventListener("click", () => {
+          navList.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>
