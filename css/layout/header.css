@@ -406,6 +406,9 @@
 }
 
 @media (max-width: 936px) {
+  .gs-hero__img-container {
+    display: none;
+  }
   /* .gs-hero__image-1,
   .gs-hero__image-2,
   .gs-hero__image-3,

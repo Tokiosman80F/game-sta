@@ -3,6 +3,10 @@
   --font-btn: "Euclid Circular A", sans-serif;
   --color-btn: #01a590;
   --color-dark: #38484e;
+  --color-dark-600: #f5f9fa;
+  --color-dark-800: #38484e;
+  --color-dark-900: #273a41;
+  --color-blue: #00b3e8;
 }
 
 /* Reset */

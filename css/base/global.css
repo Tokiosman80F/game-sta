@@ -19,3 +19,9 @@ body {
   padding: 0 32px;
   margin: 0 auto;
 }
+
+@media (max-width: 786px) {
+  .container {
+    padding: 0 16px;
+  }
+}
