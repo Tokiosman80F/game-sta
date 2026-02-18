@@ -1,0 +1,64 @@
+.gs-play2earn {
+}
+.play2earn-container {
+  padding: 0 133px;
+  border: 1px solid;
+}
+.play2earn-heading {
+}
+.play2earn-heading-top {
+  text-align: center;
+}
+.p2e-heading-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  transform: rotate(-3deg);
+}
+.p2e-heading__title {
+  position: relative;
+  margin: 0;
+  white-space: nowrap;
+}
+.p2e-heading__outline {
+  position: absolute;
+  /* Adjust these values to shift the outline */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%) scale(1.1);
+
+  color: transparent;
+  -webkit-text-stroke: 1px #7fd3ff;
+  font-size: 144px;
+  z-index: 1;
+  opacity: 0.5;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.p2e-heading__solid {
+  position: relative;
+  color: #2c3e42; /* Dark slate color from your image */
+  font-size: 96px;
+  z-index: 2;
+  letter-spacing: 4px;
+  transform: rotate(-6deg);
+}
+.play2earn-heading-top p {
+  display: flex;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--color-dark-900);
+  justify-content: end;
+}
+.p2e-sub-text {
+  width: 100%;
+  /* max-width: 586px; */
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--color-dark-800);
+  display: flex;
+  justify-content: right;
+}
