@@ -116,12 +116,10 @@
   color: white;
   padding: 8px 16px;
   display: inline-block;
-  /* transform: skewX(15deg); */
 }
 
 .ribbon span {
   display: inline-block;
-  /* transform: skewX(-15deg); */
   font-size: 20px;
   line-height: 16px;
 }
@@ -129,7 +127,6 @@
 .ribbon--top {
   position: relative;
   top: -3px;
-  /* left: 49px; */
   transform: rotate(-6deg);
 }
 .ribbon--bottom {
@@ -137,6 +134,55 @@
   top: -10px;
   left: 70px;
   transform: rotate(-6deg);
+}
+
+@media (max-width: 1126px) {
+  .ribbon-box {
+    right: -23%;
+  }
+}
+@media (max-width: 1060px) {
+  .ribbon {
+    padding: 5px 10px;
+  }
+  .ribbon-box {
+    right: -9%;
+  }
+  .ribbon-wrapper {
+    width: 94px;
+    height: 33px;
+    position: relative;
+  }
+  .ribbon span {
+    font-size: 8.34px;
+    line-height: 11px;
+  }
+  .ribbon--top {
+    position: relative;
+    top: -3px;
+  }
+  .ribbon--bottom {
+    top: -10px;
+    left: 45px;
+  }
+}
+
+@media (max-width: 834px) {
+  .ribbon-box {
+    right: -1%;
+  }
+}
+@media (max-width: 834px) {
+  .ribbon-box {
+    right: 10px;
+  }
+}
+
+@media (max-width: 407px) {
+  .ribbon-box {
+    right: 41px;
+    top: 36px;
+  }
 }
 
 /* content */
@@ -179,6 +225,12 @@
 .gs-dapp-card--content h1 {
 }
 .gs-dapp-card--content p {
+}
+
+@media (max-width: 946px) {
+  .gs-dapp-header {
+    margin-left: 10%;
+  }
 }
 
 @media (max-width: 845px) {

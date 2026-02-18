@@ -1,0 +1,324 @@
+.gs-futureApp {
+  padding: 50px 206px 144px 169px;
+}
+
+.parent {
+  width: 100%;
+  max-width: 1065px;
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0 80px;
+}
+
+/* ================= GRID ITEMS ================= */
+
+.div1 {
+  grid-column: span 3 / span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 30px;
+}
+
+.div1 h1 {
+  font-size: 96px;
+  line-height: 1;
+  text-align: right;
+}
+
+.fa-btn button {
+  background: linear-gradient(
+    71deg,
+    rgba(6, 197, 193, 1) 54%,
+    rgba(0, 159, 234, 1) 75%
+  );
+  padding: 20px 24px;
+  color: white;
+  border-radius: 6px;
+}
+
+.div2 {
+  grid-column-start: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div3,
+.div4,
+.div5,
+.div6 {
+  grid-row: span 2 / span 2;
+  grid-row-start: 2;
+  position: relative;
+}
+
+.div3,
+.div5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.div4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ================= CARD BASE ================= */
+
+.fa-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 32px;
+  padding-bottom: 40px;
+  gap: 16px;
+  border-radius: 40px;
+  color: #273a41;
+}
+
+.fa-card img {
+  width: 48px;
+  height: 48px;
+}
+
+.fa-card p {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* ================= CARD VARIANTS ================= */
+
+.fa-card-1 {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  background-color: #ebf9ff;
+}
+
+.fa-card-2 {
+  width: 100%;
+  max-width: 180px;
+  height: 180px;
+  background-color: #f5f9fa;
+  position: absolute;
+  top: 0;
+  right: -106%;
+}
+
+.fa-card-3 {
+  width: 100%;
+  max-width: 190px;
+  height: 190px;
+  background-color: #ebf9ff;
+  position: absolute;
+  top: 36%;
+  left: 73%;
+}
+
+.fa-card-4 {
+  width: 100%;
+  max-width: 228px;
+  height: 228px;
+  background-color: #ffeaf9;
+  position: absolute;
+  left: 106%;
+}
+
+.fa-card-5 {
+  width: 100%;
+  max-width: 180px;
+  height: 180px;
+  background-color: #f5f9fa;
+  position: absolute;
+  top: 3%;
+  left: 92%;
+}
+
+.fa-card-6 {
+  width: 100%;
+  max-width: 228px;
+  height: 228px;
+  background-color: #f8f3ff;
+  position: absolute;
+  bottom: 18%;
+  left: 109%;
+}
+
+.fa-card-7 {
+  width: 100%;
+  max-width: 228px;
+  height: 228px;
+  background-color: #eefff3;
+  position: absolute;
+  top: 0;
+  left: 65%;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1400px) {
+  .gs-futureApp {
+    padding: 50px 0px 144px 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .parent {
+    gap: 0;
+    padding: 16px;
+  }
+
+  .fa-card-1 {
+    max-width: 170px;
+    height: 170px;
+  }
+
+  .fa-card-4 {
+    max-width: 200px;
+    height: 200px;
+    left: 82%;
+  }
+
+  .fa-card-5 {
+    left: 52%;
+  }
+
+  .fa-card-6 {
+    max-width: 195px;
+    height: 195px;
+  }
+
+  .fa-card-7 {
+    max-width: 180px;
+    height: 180px;
+    left: 26%;
+  }
+}
+
+@media (max-width: 840px) {
+  .fa-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+    padding-bottom: 0;
+    gap: 16px;
+    border-radius: 12px;
+  }
+  .fa-card {
+    padding: 12px;
+    width: max-content;
+  }
+
+  .fa-card img {
+    width: 30px;
+    height: 30px;
+  }
+  .fa-card p {
+    font-size: 16px;
+  }
+
+  .div1 h1 {
+    font-size: 80px;
+  }
+  .fa-card-1,
+  .fa-card-2,
+  .fa-card-3,
+  .fa-card-4,
+  .fa-card-5,
+  .fa-card-6,
+  .fa-card-7 {
+    height: auto;
+  }
+
+  .fa-card-2 {
+    top: 5%;
+    right: -21%;
+  }
+
+  .fa-card-3 {
+    top: 63%;
+    left: 2%;
+  }
+
+  .fa-card-3 br {
+    display: none;
+  }
+  .fa-card-4 {
+    left: 40%;
+    top: 30%;
+  }
+  .fa-card-5 {
+    top: 8%;
+    left: 15%;
+  }
+  .fa-card-6 {
+    bottom: 18%;
+    left: 78%;
+  }
+  .fa-card-7 {
+    left: 1%;
+  }
+}
+
+@media (max-width: 700px) {
+  .div1 h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 538px) {
+  .div1 {
+    align-items: normal;
+  }
+  .fa-card {
+    gap: 5px;
+  }
+  .fa-card img {
+    width: 20px;
+    height: 20px;
+  }
+  .fa-card p {
+    font-size: 12px;
+  }
+  .div1 h1 {
+    font-size: 40px;
+  }
+  .fa-btn button {
+    padding: 8px;
+    width: 100%;
+
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .div1 {
+    align-items: normal;
+  }
+  .div1 h1 {
+    font-size: 30px;
+  }
+  .fa-btn button {
+    width: 100%;
+
+    font-size: 12px;
+  }
+  .fa-card-3 {
+    top: 72%;
+    left: 2%;
+  }
+  .fa-card-4 {
+    left: 0%;
+    top: 34%;
+  }
+  .fa-card-5 {
+    top: 8%;
+    left: -34%;
+  }
+}

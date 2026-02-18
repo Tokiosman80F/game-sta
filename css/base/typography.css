@@ -29,6 +29,17 @@
 
 @font-face {
   font-family: "Neue Machina";
+  src:
+    url("../../assets/fonts/Neue-Machina.woff") format("woff"),
+    url("../../assets/fonts/Neue-Machina.woff2") format("woff2"),
+    url("../../assets/fonts/Neue-Machina.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Machina";
   src: url("../../assets/fonts/NeueMachina-Ultrabold.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
@@ -69,6 +80,10 @@
 .heading-1-ultra {
   font-family: "Neue Machina", sans-serif;
   font-weight: 900;
+}
+.text-neu-normal {
+  font-family: "Neue Machina", sans-serif;
+  font-weight: 500;
 }
 .text-abzee-normal {
   font-family: var(--font-primary);
