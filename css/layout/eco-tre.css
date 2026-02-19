@@ -1,0 +1,64 @@
+.ecosystem {
+  padding-top: 144px;
+}
+.eco-tre {
+  padding-right: 142px;
+}
+.eco-tre-heading--1 {
+  font-size: 96px;
+  line-height: 1.2;
+  color: var(--color-dark-900);
+}
+.eco-tre-content {
+  padding-left: 305px;
+}
+.eco-tre-para-1 {
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--color-dark-900);
+}
+.eco-tre-para-2 {
+  font-size: 16px;
+  line-height: 1.3;
+  padding-left: 300px;
+  color: var(--color-dark-800);
+}
+.eco-tre-circle--container {
+  width: 686px;
+  height: 686px;
+  background: linear-gradient(
+    71deg,
+    rgba(0, 0, 0, 0.04) 0%,
+    rgba(87, 28, 227, 0) 100%
+  );
+}
+.eco-tre-circle {
+}
+.eco-tre-circle--p {
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--color-dark-900);
+}
+.eco-tre-circle--h {
+  font-size: 88px;
+  line-height: 1;
+  color: var(--color-dark-900);
+}
+.eco-tre-circle-bottom--p {
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--color-dark-900);
+}
+
+.eco-tre-ribbon--wrapper {
+}
+.eco-tre-ribbon--box {
+}
+.eco-tre--ribbon {
+}
+.eco-tre-ribbon--top {
+}
+.eco-tre-ribbon--medium {
+}
+.eco-tre-ribbon--bottom {
+}

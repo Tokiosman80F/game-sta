@@ -1,16 +1,21 @@
+/* --- Core Layout --- */
 .gs-play2earn {
   position: relative;
 }
+
 .play2earn-container {
   padding: 0 133px;
 }
+
 .play2earn-heading {
   margin-bottom: 53px;
 }
+
 .play2earn-heading-top {
   text-align: center;
   padding-bottom: 8px;
 }
+
 .gs-p2e--line {
   width: 100%;
   max-width: 400px;
@@ -18,44 +23,12 @@
   right: -13%;
   top: 15%;
 }
+
 .gs-p2e--line img {
   width: 100%;
 }
 
-@media (max-width: 976px) {
-  .gs-p2e--line {
-    width: 100%;
-    max-width: 200px;
-
-    right: 0%;
-    top: 10%;
-  }
-}
-@media (max-width: 670px) {
-  .gs-p2e--line {
-    width: 100%;
-    max-width: 100px;
-    right: 0%;
-    top: 7%;
-  }
-}
-
-@media (max-width: 520px) {
-  .gs-p2e--line {
-    width: 100%;
-    max-width: 100px;
-    right: 0%;
-    top: 4%;
-  }
-}
-@media (max-width: 375px) {
-  .gs-p2e--line {
-    width: 100%;
-    max-width: 100px;
-    right: 0%;
-    top: 3%;
-  }
-}
+/* --- Heading Styles --- */
 .p2e-heading-position {
   display: flex;
   justify-content: center;
@@ -63,18 +36,18 @@
   padding-bottom: 20px;
   transform: rotate(-3deg);
 }
+
 .p2e-heading__title {
   position: relative;
   margin: 0;
   white-space: nowrap;
 }
+
 .p2e-heading__outline {
   position: absolute;
-  /* Adjust these values to shift the outline */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -45%);
-
   color: transparent;
   -webkit-text-stroke: 1px #7fd3ff;
   font-size: 144px;
@@ -85,14 +58,17 @@
   white-space: nowrap;
   pointer-events: none;
 }
+
 .p2e-heading__solid {
   position: relative;
-  color: #2c3e42; /* Dark slate color from your image */
+  color: #2c3e42;
   font-size: 96px;
   z-index: 2;
   letter-spacing: 4px;
   transform: rotate(-6deg);
 }
+
+/* --- Text Styles --- */
 .play2earn-heading-top p {
   display: flex;
   font-size: 24px;
@@ -100,18 +76,56 @@
   color: var(--color-dark-900);
   justify-content: end;
 }
+
 .p2e-sub-text {
   width: 100%;
-  /* max-width: 586px; */
   font-size: 16px;
   line-height: 130%;
   color: var(--color-dark-800);
   display: flex;
   justify-content: right;
 }
+
+/* --- Grid & Game Styles --- */
+.hidden {
+  display: none;
+}
+
+.gs-p2e-grid {
+  position: relative;
+}
+
+.gs-p2e--line-4 {
+  position: absolute;
+  left: 0;
+  bottom: 225px;
+}
+
+.p2e-games {
+  padding-top: 133px;
+  display: flex;
+  flex-direction: column;
+}
+
+.p2e-games h1 {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--color-dark-900);
+  text-transform: uppercase;
+}
+
+.p2e-games-image {
+  display: flex;
+  gap: 32px;
+  padding: 35px 0;
+}
+
+/* --- Media Queries --- */
+
 @media (max-width: 1350px) {
   .play2earn-container {
-    padding: 0px 0px;
+    padding: 0;
   }
   .play2earn-heading-top p {
     justify-content: center;
@@ -122,12 +136,21 @@
     margin-left: 9%;
   }
 }
+
 @media (max-width: 1000px) {
   .p2e-heading__outline {
     font-size: 100px;
   }
   .p2e-heading__solid {
     font-size: 80px;
+  }
+}
+
+@media (max-width: 976px) {
+  .gs-p2e--line {
+    max-width: 200px;
+    right: 0%;
+    top: 10%;
   }
 }
 
@@ -143,6 +166,7 @@
     display: none;
   }
 }
+
 @media (max-width: 684px) {
   .p2e-heading__outline {
     font-size: 80px;
@@ -151,12 +175,26 @@
     font-size: 50px;
   }
 }
+
+@media (max-width: 670px) {
+  .gs-p2e--line {
+    max-width: 100px;
+    top: 7%;
+  }
+}
+
 @media (max-width: 542px) {
   .p2e-heading__outline {
     font-size: 45px;
   }
   .p2e-heading__solid {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .gs-p2e--line {
+    top: 4%;
   }
 }
 
@@ -172,17 +210,7 @@
     font-size: 14px;
     line-height: 18px;
   }
-}
-
-/* <!--  PLAY 2 EARN GRID --> */
-.hidden {
-  display: none;
-}
-.gs-p2e-grid {
-  position: relative;
-}
-
-@media (max-width: 425px) {
+  /* Grid specific logic */
   .gs-p2e--line-2,
   .gs-p2e--line-3 {
     display: block;
@@ -201,9 +229,7 @@
   .gs-p2e--line-3 {
     top: 80%;
   }
-}
 
-@media (max-width: 425px) {
   .gs-p2e-card:nth-child(odd) {
     align-items: start;
     text-align: start;
@@ -214,37 +240,10 @@
   }
 }
 
-.gs-p2e-card--img {
-}
-.gs-p2e-card--content {
-}
-
-/* <!-- Slide:  PLAY 2 EARN Game  --> */
-.gs-p2e--line-4 {
-  position: absolute;
-  left: 0;
-  bottom: 225px;
-}
-.p2e-games {
-  padding-top: 133px;
-  display: flex;
-  flex-direction: column;
-}
-.p2e-games h1 {
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: 0.01em;
-  color: var(--color-dark-900);
-  text-transform: uppercase;
-}
-.p2e-games-image {
-  display: flex;
-  gap: 32px;
-  padding: 35px 0;
-}
-.p2e-games-image img {
-}
 @media (max-width: 375px) {
+  .gs-p2e--line {
+    top: 3%;
+  }
   .gs-p2e--line-4 {
     display: none;
   }
