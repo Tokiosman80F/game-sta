@@ -1,13 +1,60 @@
 .gs-play2earn {
+  position: relative;
 }
 .play2earn-container {
   padding: 0 133px;
-  border: 1px solid;
 }
 .play2earn-heading {
+  margin-bottom: 53px;
 }
 .play2earn-heading-top {
   text-align: center;
+  padding-bottom: 8px;
+}
+.gs-p2e--line {
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  right: -13%;
+  top: 15%;
+}
+.gs-p2e--line img {
+  width: 100%;
+}
+
+@media (max-width: 976px) {
+  .gs-p2e--line {
+    width: 100%;
+    max-width: 200px;
+
+    right: 0%;
+    top: 10%;
+  }
+}
+@media (max-width: 670px) {
+  .gs-p2e--line {
+    width: 100%;
+    max-width: 100px;
+    right: 0%;
+    top: 7%;
+  }
+}
+
+@media (max-width: 520px) {
+  .gs-p2e--line {
+    width: 100%;
+    max-width: 100px;
+    right: 0%;
+    top: 4%;
+  }
+}
+@media (max-width: 375px) {
+  .gs-p2e--line {
+    width: 100%;
+    max-width: 100px;
+    right: 0%;
+    top: 3%;
+  }
 }
 .p2e-heading-position {
   display: flex;
@@ -26,7 +73,7 @@
   /* Adjust these values to shift the outline */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -45%) scale(1.1);
+  transform: translate(-50%, -45%);
 
   color: transparent;
   -webkit-text-stroke: 1px #7fd3ff;
@@ -61,4 +108,144 @@
   color: var(--color-dark-800);
   display: flex;
   justify-content: right;
+}
+@media (max-width: 1350px) {
+  .play2earn-container {
+    padding: 0px 0px;
+  }
+  .play2earn-heading-top p {
+    justify-content: center;
+    margin-left: 122px;
+  }
+  .p2e-sub-text {
+    justify-content: center;
+    margin-left: 9%;
+  }
+}
+@media (max-width: 1000px) {
+  .p2e-heading__outline {
+    font-size: 100px;
+  }
+  .p2e-heading__solid {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .play2earn-heading-top p {
+    margin-left: 0;
+    text-align: start;
+  }
+  .p2e-sub-text {
+    margin-left: 15px;
+  }
+  .p2e-sub-text br {
+    display: none;
+  }
+}
+@media (max-width: 684px) {
+  .p2e-heading__outline {
+    font-size: 80px;
+  }
+  .p2e-heading__solid {
+    font-size: 50px;
+  }
+}
+@media (max-width: 542px) {
+  .p2e-heading__outline {
+    font-size: 45px;
+  }
+  .p2e-heading__solid {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .play2earn-heading-top p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .play2earn-heading-top {
+    padding-bottom: 24px;
+  }
+  .p2e-sub-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+/* <!--  PLAY 2 EARN GRID --> */
+.hidden {
+  display: none;
+}
+.gs-p2e-grid {
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  .gs-p2e--line-2,
+  .gs-p2e--line-3 {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    left: -158px;
+  }
+  .gs-p2e--line-2 img,
+  .gs-p2e--line-3 img {
+    width: 100%;
+  }
+  .gs-p2e--line-2 {
+    top: 30%;
+  }
+  .gs-p2e--line-3 {
+    top: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .gs-p2e-card:nth-child(odd) {
+    align-items: start;
+    text-align: start;
+  }
+  .gs-p2e-card:nth-child(even) {
+    align-items: end;
+    text-align: end;
+  }
+}
+
+.gs-p2e-card--img {
+}
+.gs-p2e-card--content {
+}
+
+/* <!-- Slide:  PLAY 2 EARN Game  --> */
+.gs-p2e--line-4 {
+  position: absolute;
+  left: 0;
+  bottom: 225px;
+}
+.p2e-games {
+  padding-top: 133px;
+  display: flex;
+  flex-direction: column;
+}
+.p2e-games h1 {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--color-dark-900);
+  text-transform: uppercase;
+}
+.p2e-games-image {
+  display: flex;
+  gap: 32px;
+  padding: 35px 0;
+}
+.p2e-games-image img {
+}
+@media (max-width: 375px) {
+  .gs-p2e--line-4 {
+    display: none;
+  }
 }

@@ -4,6 +4,7 @@
 @import "./base/typography.css";
 /* component */
 @import "./components/button.css";
+@import "./components/card-grid.css";
 /* layout */
 @import "./layout/header.css";
 @import "./layout/dapp.css";
