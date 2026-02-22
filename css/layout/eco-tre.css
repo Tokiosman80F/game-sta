@@ -1,64 +1,190 @@
+/* --- SECTION WRAPPERS --- */
 .ecosystem {
   padding-top: 144px;
+  position: relative;
+  min-height: 945px;
 }
+
 .eco-tre {
   padding-right: 142px;
+  position: relative;
 }
+
+/* --- MAIN TEXT --- */
 .eco-tre-heading--1 {
   font-size: 96px;
   line-height: 1.2;
   color: var(--color-dark-900);
 }
+
 .eco-tre-content {
   padding-left: 305px;
 }
+
 .eco-tre-para-1 {
   font-size: 24px;
   line-height: 1.4;
   color: var(--color-dark-900);
 }
+
 .eco-tre-para-2 {
   font-size: 16px;
   line-height: 1.3;
   padding-left: 300px;
   color: var(--color-dark-800);
 }
+
+/* --- CIRCLE WRAPPER & OUTER CONTAINER --- */
+.eco-tre-circle-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 68%;
+  z-index: -1; /* Changed from -1 so children aren't hidden */
+}
+
 .eco-tre-circle--container {
-  width: 686px;
+  position: relative;
+  width: 100%;
+  max-width: 686px;
   height: 686px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Fixed rgb(256) to rgb(255) */
   background: linear-gradient(
     71deg,
-    rgba(0, 0, 0, 0.04) 0%,
-    rgba(87, 28, 227, 0) 100%
+    rgb(255, 255, 255) 100%,
+    rgb(255, 255, 255) 88%
   );
 }
+
+/* --- THE GRADIENT CIRCLE --- */
 .eco-tre-circle {
+  position: relative;
+  width: 100%;
+  max-width: 404px;
+  height: 404px;
+  display: flex;
+  gap: 5px;
+  transform: rotate(-6deg);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    225deg,
+    hsl(194deg 100% 45%) 0%,
+    hsl(199deg 98% 46%) 8%,
+    hsl(204deg 96% 46%) 16%,
+    hsl(208deg 94% 47%) 23%,
+    hsl(213deg 93% 47%) 31%,
+    hsl(218deg 91% 47%) 39%,
+    hsl(223deg 89% 48%) 46%,
+    hsl(228deg 88% 48%) 54%,
+    hsl(233deg 86% 48%) 62%,
+    hsl(238deg 84% 49%) 69%,
+    hsl(243deg 83% 49%) 77%,
+    hsl(248deg 81% 49%) 85%,
+    hsl(253deg 80% 50%) 92%,
+    hsl(258deg 78% 50%) 100%
+  );
+  border-radius: 50%;
 }
+
+/* --- THE WHITE INNER OVERLAY --- */
+.eco-tre-circle::after {
+  content: "";
+  position: absolute;
+  width: 388px;
+  height: 388px;
+  background: white;
+  border-radius: 50%;
+  z-index: 1; /* Sits above the gradient but below the text */
+}
+
+/* --- CIRCLE CONTENT --- */
+.eco-tre-circle--h,
 .eco-tre-circle--p {
+  position: relative;
+  z-index: 2; /* Forces text to sit on top of the ::after overlay */
+}
+
+.eco-tre-circle--p {
+  display: block;
+  width: 50%;
+  text-align: start;
   font-size: 24px;
   line-height: 1.2;
   color: var(--color-dark-900);
 }
+
 .eco-tre-circle--h {
   font-size: 88px;
   line-height: 1;
   color: var(--color-dark-900);
 }
+
 .eco-tre-circle-bottom--p {
+  position: absolute;
   font-size: 14px;
   line-height: 1.3;
   color: var(--color-dark-900);
+  max-width: 270px;
+  text-align: end;
+  left: 0;
+  bottom: 45px;
+  z-index: 10;
 }
 
+.eco-tre-circle--icon {
+  position: absolute;
+  z-index: 3;
+  left: 64px;
+  bottom: 65px;
+  transform: translate(-50%, 50%);
+}
+
+/* --- RIBBON SECTION --- */
 .eco-tre-ribbon--wrapper {
+  position: absolute;
+  width: 870px;
+  height: 167px; /* Cleaned up redundant auto height */
+  left: 50%;
+  bottom: 118px;
 }
+
 .eco-tre-ribbon--box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: rotate(-6deg);
 }
+
 .eco-tre--ribbon {
+  display: inline-block;
+  background-color: var(--color-blue);
+  color: white;
+  padding: 8px 16px;
 }
-.eco-tre-ribbon--top {
+
+.eco-tre--ribbon span {
+  font-size: 48px;
+  line-height: 1.1;
+  display: inline-block;
 }
+
 .eco-tre-ribbon--medium {
+  position: absolute;
+  left: 20%;
+  bottom: 29%;
 }
+
 .eco-tre-ribbon--bottom {
+  position: absolute;
+  left: 34%;
+  bottom: 0;
 }

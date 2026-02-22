@@ -1,0 +1,37 @@
+.distribution {
+  margin-top: 300px;
+}
+.distribution-content {
+}
+.distribution-heading {
+  text-align: center;
+  margin-bottom: 82px;
+}
+.distribution-heading h2 {
+  font-size: 48px;
+  line-height: 1.2;
+
+  color: var(--color-dark-900);
+}
+.distribution-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+.distribution-grid--1 {
+}
+.distribution-grid--1 p,
+.distribution-grid--3 p {
+  font-size: 24px;
+  line-height: 1.4;
+  color: #273a41;
+}
+
+.distribution-grid--2 {
+}
+.distribution-grid--3 {
+}
+.distribution-sub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 53px;
+}
