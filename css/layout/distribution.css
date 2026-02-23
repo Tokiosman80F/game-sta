@@ -18,6 +18,10 @@
   grid-template-columns: 1fr auto 1fr;
 }
 .distribution-grid--1 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-end;
 }
 .distribution-grid--1 p,
 .distribution-grid--3 p {
@@ -27,11 +31,35 @@
 }
 
 .distribution-grid--2 {
+  margin-left: -32%;
 }
 .distribution-grid--3 {
+  position: relative;
+}
+.distribution-grid--3-img {
+  margin: 0 auto;
+}
+.grid-3-p {
+  text-align: center;
+}
+.grid-3-p-2 {
+  padding-top: 62px;
+  padding-bottom: 36px;
 }
 .distribution-sub-grid {
+  position: absolute;
+  left: -20%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
   gap: 53px;
+}
+
+.sub-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+.sub-flex p {
+  font-size: 14px;
 }
