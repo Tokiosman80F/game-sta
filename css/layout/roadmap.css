@@ -1,0 +1,193 @@
+.roadmap-parent {
+  max-width: 1180px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.roadmap-div6 {
+  grid-column: span 5 / span 5;
+  margin: 0 auto;
+}
+
+.roadmap-div7 {
+  grid-row-start: 3;
+}
+
+.roadmap-div8 {
+  grid-row-start: 3;
+}
+
+.roadmap-div9 {
+  grid-row-start: 3;
+}
+
+.roadmap-div10 {
+  grid-row-start: 3;
+}
+
+.roadmap-div11 {
+  grid-row-start: 3;
+}
+
+.roadmap-div12 {
+  grid-column: span 5 / span 5;
+  display: flex;
+  justify-content: center;
+  margin-top: -75px;
+}
+
+.roadmap-div13 {
+  grid-row-start: 5;
+}
+
+.roadmap-div14 {
+  grid-row-start: 5;
+}
+
+.roadmap-div15 {
+  grid-row-start: 5;
+}
+
+.roadmap-div16 {
+  grid-row-start: 5;
+}
+
+.roadmap-div17 {
+  grid-row-start: 5;
+}
+
+.roadmap-div1,
+.roadmap-div3,
+.roadmap-div5,
+.roadmap-div7,
+.roadmap-div9,
+.roadmap-div11,
+.roadmap-div13,
+.roadmap-div15,
+.roadmap-div17 {
+  width: 328px;
+}
+/* card */
+.rp-card {
+  display: flex;
+  flex-direction: column;
+}
+.rp-card-header {
+  font-size: 24px;
+  letter-spacing: 2.4px;
+  width: max-content;
+  font-family: "Neue Machina", sans-serif;
+  font-weight: 900;
+  padding: 17px 20.5px 9.6px 20.5px;
+  border-radius: 13px 13px 0 0;
+  color: #fff;
+}
+.rp-card-header--blue {
+  background-color: #00b3e8;
+}
+.rp-card-header--green {
+  background-color: #0ec742;
+}
+.rp-card-header--purple {
+  background-color: #5f0ec7;
+}
+.rp-card-header--orange {
+  background-color: #ff7a00;
+}
+.rp-card-header--pink {
+  background-color: #d242aa;
+}
+
+.rp-card-body {
+  width: 100%;
+  max-width: 328px;
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 0 13px 13px 13px;
+  padding: 20.5px 0 20.5px 20.5px;
+}
+
+.rp-card-body--blue {
+  border: 1px solid #00b3e8;
+  background-color: rgba(0, 179, 232, 0.1);
+}
+.rp-card-body--green {
+  border: 1px solid #0ec742;
+  background-color: #0ec7421a;
+}
+.rp-card-body--purple {
+  border: 1px solid #5f0ec7;
+  background-color: #5f0ec71a;
+}
+.rp-card-body--orange {
+  border: 1px solid #ff7a00;
+  background-color: #ff7a001a;
+}
+.rp-card-body--pink {
+  border: 1px solid #d242aa;
+  background-color: #d242aa1a;
+}
+.rp-card-title {
+  font-family: "Neue Machina", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1;
+}
+.rp-card-title p,
+.rp-card-body p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.3;
+  margin-top: 3px;
+}
+.rp-card-title--blue {
+  color: #00b3e8;
+}
+.rp-card-title--green {
+  color: #0ec742;
+}
+.rp-card-title--purple {
+  color: #5f0ec7;
+}
+.rp-card-title--orange {
+  color: #ff7a00;
+}
+.rp-card-title--pink {
+  color: #d242aa;
+}
+
+.roadmap-div2,
+.roadmap-div4,
+.roadmap-div14,
+.roadmap-div16 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  padding-top: 56px;
+}
+
+.roadmap-div8,
+.roadmap-div10 {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-evenly;
+}
+
+.rp-heading-flex {
+  display: flex;
+  align-items: end;
+}
+.rp-card-version {
+  background-color: #38484e;
+  padding: 9px 15px 3px 15px;
+  color: #fff;
+  font-family: "Neue Machina", sans-serif;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 1.1;
+  letter-spacing: 1.1px;
+  border-radius: 0 13px 0 0;
+}
