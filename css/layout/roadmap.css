@@ -1,10 +1,22 @@
+.roadmap{
+  padding: 65px 0;
+}
 .roadmap-parent {
   max-width: 1180px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto auto auto auto auto;
 }
-
+.roadmap-heading{
+  margin-bottom: 60px;
+}
+.roadmap-heading h1{
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: var(--color-dark-900);
+  text-transform: uppercase;
+}
 .roadmap-div6 {
   grid-column: span 5 / span 5;
   margin: 0 auto;
