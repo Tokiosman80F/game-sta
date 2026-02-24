@@ -1,24 +1,33 @@
 .gamex-card {
-  overflow: visible;
-  z-index: 1;
+  /* border: 2px solid red; */
+  position: relative;
+  padding-top: 100px;
   margin-top: 118px;
-  background-color: #1b1f21;
-  height: 668px;
+  height: 910px;
   display: flex;
   align-items: center;
-  clip-path: polygon(0 1%, 100% 14%, 100% 91%, 60% 96%, 50% 86%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 65% 100%, 57% 87%, 0 100%);
+}
+.gamex-bg {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-color: #1b1f21;
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 65% 100%, 48% 100%, 0 100%);
 }
 .gamex-wrapper {
+  height: inherit;
   width: 100%;
   color: white;
   display: flex;
-  border: 1px solid wheat;
+  /* border: 1px solid wheat; */
 }
 .gamex-content {
 }
 .gamex-content,
 .gamex-img {
-  flex: 1;
+  flex: 0 0 1;
 }
 .gamex-heading {
   font-size: 112px;
@@ -51,8 +60,13 @@
   color: #00b3e8;
   text-decoration: underline;
 }
-
 .gamex-img {
+  height: inherit;
+}
+.gamex-img img {
+  width: 100%;
+  height: inherit;
   z-index: 10;
   transform: rotate(81.52deg);
+  /* border: 1px solid red; */
 }
