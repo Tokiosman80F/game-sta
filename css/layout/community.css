@@ -1,0 +1,56 @@
+.community {
+  background-image: url("../../assets/images/join-community.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.line-comm-left {
+  position: absolute;
+  top: 40%;
+}
+.line-comm-right {
+  position: absolute;
+  right: 0;
+  bottom: 40%;
+}
+
+.community-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+.community-header {
+  text-align: center;
+  font-family: "Neue Machina", sans-serif;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-dark-900);
+  transform: rotate(-6deg);
+  z-index: 10;
+}
+
+.logo--twitter {
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  top: 8%;
+}
+.logo--telegram {
+  position: absolute;
+  z-index: 9;
+  left: 11%;
+  bottom: 16px;
+}
+.logo--yt {
+  position: absolute;
+  z-index: 11;
+  top: 26%;
+  right: -114px;
+}
