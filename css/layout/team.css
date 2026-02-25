@@ -1,6 +1,7 @@
 /* ========team========== */
 .team {
   padding-top: 201px;
+  /* position: relative; */
 }
 .team-wrapper {
 }
@@ -79,6 +80,7 @@
 /* ========== ADVISOR  ================= */
 .advisor-wrapper {
   padding-top: 102px;
+  padding-bottom: 62px;
 }
 .advisor-heading {
   padding-bottom: 46px;
@@ -127,4 +129,11 @@
   font-size: 12px;
   line-height: 1.3;
   color: var(--color-dark-800);
+}
+.advisor-line {
+  /* position: absolute; */
+  width: 100%;
+}
+.advisor-line--img {
+  width: 100%;
 }

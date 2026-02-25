@@ -1,0 +1,27 @@
+.partner {
+}
+.partner-heading {
+  padding-bottom: 23px;
+}
+.partner-heading h1 {
+  color: var(--color-dark-900);
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 169px);
+  grid-template-rows: repeat(3, 109px);
+  gap: 23px 32px;
+}
+.partner-div {
+  border: 1px solid #eef3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partner-div img {
+  object-fit: contain;
+}
