@@ -137,6 +137,20 @@
   }
 }
 
+@media (max-width: 1245px) {
+  .p2e-games-image {
+    display: flex;
+    gap: 32px;
+    padding: 35px 0;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+  .p2e-games-image img {
+    flex-shrink: 0;
+    height: auto; /* Or set a specific height */
+  }
+}
+
 @media (max-width: 1000px) {
   .p2e-heading__outline {
     font-size: 100px;

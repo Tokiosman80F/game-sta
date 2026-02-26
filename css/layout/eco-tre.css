@@ -18,10 +18,14 @@
 }
 
 .eco-tre-content {
+  /* padding-left: 305px; */
+}
+.eco-tre-content h1 {
   padding-left: 305px;
 }
 
 .eco-tre-para-1 {
+  padding-left: 305px;
   font-size: 24px;
   line-height: 1.4;
   color: var(--color-dark-900);
@@ -30,7 +34,7 @@
 .eco-tre-para-2 {
   font-size: 16px;
   line-height: 1.3;
-  padding-left: 300px;
+  padding-left: 600px;
   color: var(--color-dark-800);
 }
 
@@ -186,5 +190,226 @@
 .eco-tre-ribbon--bottom {
   position: absolute;
   left: 34%;
-  bottom: 0;
+  bottom: -14px;
+}
+
+@media (max-width: 1254px) {
+  .eco-tre--ribbon span {
+    font-size: 36px;
+  }
+  .eco-tre-ribbon--medium {
+    bottom: 39%;
+  }
+  .eco-tre-ribbon--bottom {
+    bottom: 18px;
+  }
+}
+@media (max-width: 1120px) {
+  .eco-tre--ribbon span {
+    font-size: 24px;
+  }
+  .eco-tre-ribbon--medium {
+    bottom: 51%;
+    left: 11%;
+  }
+  .eco-tre-ribbon--bottom {
+    bottom: 44px;
+    left: 20%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .eco-tre-heading--1 {
+    font-size: 72px;
+  }
+  .eco-tre-content h1 {
+    padding-left: 220px;
+  }
+  .eco-tre-para-1 {
+    padding-left: 227px;
+  }
+  .eco-tre-para-1 br {
+    display: none;
+  }
+
+  .eco-tre-para-2 {
+    padding-left: 360px;
+  }
+  .eco-tre-circle-wrapper {
+    top: 100%;
+  }
+  .eco-tre-circle--container {
+    max-width: 450px;
+    height: 450px;
+
+    background: aqua;
+  }
+  .eco-tre-circle {
+    max-width: 320px;
+    height: 320px;
+  }
+  .eco-tre-circle::after {
+    width: 300px;
+    height: 300px;
+  }
+  .eco-tre-ribbon--wrapper {
+    position: absolute;
+    width: 870px;
+    height: 167px;
+    left: 50%;
+    bottom: 30px;
+  }
+
+  .eco-tre-circle-bottom--p {
+    position: absolute;
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--color-dark-900);
+    max-width: 270px;
+    text-align: end;
+    left: 0;
+    bottom: -30px;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 855px) {
+  .eco-tre-heading--1 {
+    font-size: 56px;
+  }
+  .eco-tre-content h1 {
+    padding-left: 146px;
+  }
+  .eco-tre-para-1 {
+    padding-left: 100px;
+  }
+  .eco-tre-para-2 {
+    padding-left: 200px;
+  }
+}
+@media (max-width: 725px) {
+  .eco-tre {
+    padding-right: 0px;
+  }
+  .eco-tre--ribbon span {
+    font-size: 16px;
+  }
+  .eco-tre-ribbon--medium {
+    bottom: 60%;
+    left: 8%;
+  }
+  .eco-tre-ribbon--bottom {
+    bottom: 71px;
+    left: 15%;
+  }
+  .eco-tre-circle--h {
+    font-size: 40px;
+    line-height: 1;
+    color: var(--color-dark-900);
+  }
+  .eco-tre-circle--p {
+    display: block;
+    width: 37%;
+    text-align: start;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color-dark-900);
+  }
+  .eco-tre-para-1 {
+    padding-left: 16px;
+    font-size: 20px;
+  }
+  .eco-tre-para-2 {
+    padding-left: 87px;
+  }
+  .eco-tre-ribbon--wrapper {
+    position: absolute;
+    width: 870px;
+    height: 167px;
+    left: 45%;
+    bottom: 38px;
+  }
+}
+
+@media (max-width: 558px) {
+  .eco-tre-ribbon--wrapper {
+    position: absolute;
+    width: 870px;
+    height: 167px;
+    left: 55%;
+    bottom: -48px;
+  }
+  .eco-tre-heading--1 {
+    font-size: 40px;
+  }
+  .eco-tre-para-1 {
+    padding-left: 16px;
+    font-size: 16px;
+  }
+  .eco-tre-para-2 {
+    padding-top: 28px;
+  }
+  .eco-tre-circle::after {
+    width: 104px;
+    height: 104px;
+  }
+  .eco-tre-circle--h {
+    font-size: 24px;
+    line-height: 1;
+    color: var(--color-dark-900);
+  }
+  .eco-tre-circle--p {
+    display: block;
+    width: 17%;
+    text-align: start;
+    font-size: 8px;
+    line-height: 1.2;
+    color: var(--color-dark-900);
+  }
+  .eco-tre-circle {
+    max-width: 115px;
+    height: 115px;
+  }
+  .eco-tre-circle--icon {
+    position: absolute;
+    z-index: 3;
+    left: 29px;
+    bottom: 16px;
+    transform: translate(-50%, 50%);
+    width: 40px;
+    height: 60px;
+  }
+  .eco-tre-circle--container {
+    max-width: 190px;
+    height: 190px;
+    background: aqua;
+  }
+  .eco-tre-circle-bottom--p {
+    position: absolute;
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--color-dark-900);
+    max-width: 270px;
+    text-align: end;
+    left: 0;
+    bottom: -102px;
+    z-index: 10;
+  }
+  .eco-tre--ribbon span {
+    font-size: 12px;
+  }
+  .eco-tre--ribbon {
+    display: inline-block;
+    background-color: var(--color-blue);
+    color: white;
+    padding: 0px 9px;
+  }
+  .eco-tre-ribbon--medium {
+    bottom: 74%;
+    left: 5%;
+  }
+  .eco-tre-ribbon--bottom {
+    bottom: 105px;
+    left: 11%;
+  }
 }
