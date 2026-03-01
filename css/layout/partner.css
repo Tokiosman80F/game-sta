@@ -26,3 +26,36 @@
 .partner-div img {
   object-fit: contain;
 }
+
+@media (max-width: 1200px) {
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 23px 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 23px 32px;
+  }
+}
+@media (max-width: 600px) {
+  .partner-heading h1 {
+    color: var(--color-dark-900);
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 23px 32px;
+  }
+}

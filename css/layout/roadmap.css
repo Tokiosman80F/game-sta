@@ -1,4 +1,4 @@
-.roadmap{
+.roadmap {
   padding: 65px 0;
 }
 .roadmap-parent {
@@ -7,10 +7,10 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto auto auto auto auto;
 }
-.roadmap-heading{
+.roadmap-heading {
   margin-bottom: 60px;
 }
-.roadmap-heading h1{
+.roadmap-heading h1 {
   font-size: 36px;
   line-height: 1;
   letter-spacing: 0.1em;
@@ -202,4 +202,19 @@
   line-height: 1.1;
   letter-spacing: 1.1px;
   border-radius: 0 13px 0 0;
+}
+
+@media (max-width: 1114px) {
+  .roadmap-div1,
+  .roadmap-div3,
+  .roadmap-div5,
+  .roadmap-div7,
+  .roadmap-div9,
+  .roadmap-div11,
+  .roadmap-div13,
+  .roadmap-div15,
+  .roadmap-div17 {
+    width: 100%;
+    max-width: 328px;
+  }
 }

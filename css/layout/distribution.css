@@ -63,3 +63,111 @@
 .sub-flex p {
   font-size: 14px;
 }
+@media (max-width: 1040px) {
+  .distribution-heading h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--color-dark-900);
+  }
+  .distribution {
+    margin-top: 401px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .distribution {
+    margin-top: 300px;
+  }
+  .distribution-sub-grid {
+    position: absolute;
+    left: -40%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 53px;
+  }
+}
+@media (max-width: 774px) {
+  .distribution-heading h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--color-dark-900);
+  }
+  .distribution-grid--1 p,
+  .distribution-grid--3 p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #273a41;
+  }
+  .sub-flex p {
+    font-size: 14px;
+  }
+  .distribution-sub-grid {
+    position: absolute;
+    left: -56%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 664px) {
+  .distribution {
+    margin-top: 29px;
+  }
+  .distribution-sub-grid {
+    position: absolute;
+    left: -70%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 14px;
+  }
+}
+@media (max-width: 477px) {
+  .distribution-heading h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--color-dark-900);
+  }
+  .distribution-grid--1 p,
+  .distribution-grid--3 p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #273a41;
+  }
+  .distribution-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 60px 1fr;
+  }
+
+  .distribution-sub-grid {
+    position: absolute;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 14px;
+  }
+  .distribution-grid--2 {
+    position: relative;
+    margin-left: 0;
+    /* transform: rotate(63deg); */
+    /* height: 10%; */
+    width: 100%;
+    /* background-color: antiquewhite; */
+  }
+
+  .distribution-grid--2 img {
+    position: absolute;
+    /* width: 100%; */
+    transform: rotate(66deg);
+    /* object-fit: scale-down; */
+    /* border: 1px solid; */
+    bottom: -249px;
+    right: 75px;
+  }
+}
+@media (max-width: 335px) {
+  .distribution {
+    margin-top: 74px;
+  }
+}

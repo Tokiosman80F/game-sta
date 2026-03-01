@@ -54,3 +54,33 @@
   top: 26%;
   right: -114px;
 }
+@media (max-width: 1300px) {
+  .line-comm-left {
+    position: absolute;
+    top: 30%;
+  }
+  .line-comm-right {
+    position: absolute;
+    bottom: 30%;
+  }
+}
+@media (max-width: 1000px) {
+  .community-header {
+    text-align: center;
+    font-family: "Neue Machina", sans-serif;
+    font-weight: 900;
+    font-size: 59px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-dark-900);
+    transform: rotate(-6deg);
+    z-index: 10;
+  }
+  .line-comm-left img {
+    width: 50%;
+  }
+  .line-comm-right img {
+    /* width: 50%; */
+  }
+}
