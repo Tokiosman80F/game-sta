@@ -167,6 +167,17 @@
 .gs-dapp-card--content p {
 }
 
+@media(max-width: 976px) {
+  .gs-dapp {
+    margin-top: -208px;
+    /* z-index: 5; */
+    padding-top: 265px;
+    padding-bottom: 120px;
+    position: relative;
+    background-color: var(--color-dark-600);
+    clip-path: polygon(0 14%, 100% 0%, 100% 90%, 0% 100%);
+}
+}
 @media (max-width: 946px) {
   .gs-dapp-header {
     margin-left: 10%;
@@ -182,12 +193,12 @@
   }
 }
 @media (max-width: 768px) {
-  .gs-dapp {
-    padding-top: 87px;
+.gs-dapp {
+    padding-top: 281px;
     padding-bottom: 262px;
     position: relative;
     background-color: var(--color-dark-600);
-  }
+}
   .gs-dapp-header {
     margin: 0px auto 48px;
   }

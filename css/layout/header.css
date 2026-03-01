@@ -347,4 +347,71 @@
 }
 
 @media (max-width: 976px) {
+  .gs-hero {
+    /* z-index: 6; */
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background: #f5f9fa;
+}
+.header-bg {
+    width: 100%;
+    margin-top: -71px;
+    position: absolute;
+    background-image: linear-gradient(
+      -45deg,
+      rgba(0, 170, 139, 0.9) 0%,
+      rgba(0, 125, 132, 0.9) 56%,
+      rgba(0, 134, 176, 0.9) 100%
+    ),
+    url("../../assets/images/gs__hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+    clip-path: polygon(100% 0, 100% 39%, 100% 89%, 0 100%, 0 0);
+}
+.gs-hero__image {
+    /* border: 1px solid; */
+    position: absolute;
+    top: 114%;
+    width: 100%;
+    height: 100%;
+    right: -1%;
+    border: 1px solid;
+    /* z-index: 2; */
+}
+}
+
+@media(max-width:541px){
+  .hero-1 {
+    position: absolute;
+    z-index: 0;
+    top: 115px;
+    right: 62px;
+}
+  .hero-2 {
+    position: absolute;
+    z-index: 20;
+    right: 43px;
+    top: 144px;
+}
+  .hero-3 {
+    position: absolute;
+    z-index: 10;
+    bottom: 119px;
+    right: 80px;
+}
+  .hero-1 img {
+    width: 100%;
+    max-width: 350px;
+}
+.hero-2 img {
+    width: 100%;
+    max-width: 265px;
+}
+.hero-3 img {
+    width: 100%;
+    max-width: 313px;
+}
 }
