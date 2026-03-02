@@ -382,7 +382,7 @@
   .eco-tre-circle--container {
     max-width: 190px;
     height: 190px;
-    background: aqua;
+    /* background: aqua; */
   }
   .eco-tre-circle-bottom--p {
     position: absolute;

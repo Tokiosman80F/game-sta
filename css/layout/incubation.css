@@ -57,6 +57,11 @@
 }
 
 @media (max-width: 865px) {
+  .incubation {
+    margin-top: 60px;
+    margin-bottom: 118px;
+    position: relative;
+  }
   .incubation-heading {
     font-size: 60px;
     line-height: 1.2;

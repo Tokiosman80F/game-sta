@@ -21,14 +21,16 @@
   width: 100%;
   color: white;
   display: flex;
-  /* border: 1px solid wheat; */
+  border: 1px solid wheat;
 }
 .gamex-content {
+  border: 1px solid red;
+  padding-right: 100px;
 }
-.gamex-content,
+/* .gamex-content,
 .gamex-img {
   flex: 0 0 1;
-}
+} */
 .gamex-heading {
   font-size: 112px;
   line-height: 1.2;
@@ -65,8 +67,32 @@
 }
 .gamex-img img {
   width: 100%;
+  /* max-width: ; */
   height: inherit;
   z-index: 10;
   transform: rotate(81.52deg);
-  /* border: 1px solid red; */
+  border: 1px solid red;
+}
+
+@media (max-width: 1024px) {
+  .gamex-heading {
+    font-size: 80px;
+    line-height: 1.2;
+    color: inherit;
+    position: relative;
+  }
+  .gamex-subheading {
+    font-size: 20px;
+    line-height: 1.4;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 764px) {
+  .gamex-heading {
+    font-size: 60px;
+    line-height: 1.2;
+    color: inherit;
+    position: relative;
+  }
 }

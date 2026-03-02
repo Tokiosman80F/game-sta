@@ -218,3 +218,64 @@
     max-width: 328px;
   }
 }
+@media (max-width: 1000px) {
+  .roadmap-div6 img,
+  .roadmap-div12 img {
+    width: 90%;
+  }
+  .roadmap-div2 img,
+  .roadmap-div4 img,
+  .roadmap-div8 img,
+  .roadmap-div10 img,
+  .roadmap-div14 img,
+  .roadmap-div16 img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 764px) {
+  .rp-card-body {
+    width: 100%;
+    max-width: 328px;
+    border-radius: 0 13px 13px 13px;
+    padding: 10.5px 0 7.5px 7.5px;
+  }
+  .rp-card-header {
+    font-size: 16px;
+    letter-spacing: 2.4px;
+    width: max-content;
+    font-family: "Neue Machina", sans-serif;
+    font-weight: 900;
+    padding: 6px 15.5px 6.6px 15.5px;
+    border-radius: 13px 13px 0 0;
+    color: #fff;
+  }
+  .rp-card-title {
+    font-family: "Neue Machina", sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 1;
+  }
+  .rp-card-title p,
+  .rp-card-body p {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.3;
+    margin-top: 3px;
+  }
+}
+@media (max-width: 764px) {
+  .roadmap-div1,
+  .roadmap-div3,
+  .roadmap-div5,
+  .roadmap-div7,
+  .roadmap-div9,
+  .roadmap-div11,
+  .roadmap-div13,
+  .roadmap-div15,
+  .roadmap-div17 {
+    width: 100%;
+    max-width: 150px;
+  }
+}
