@@ -28,6 +28,14 @@
   width: 100%;
 }
 
+.p2e-bottom--line {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.p2e-bottom--line img {
+  width: 100%;
+}
+
 /* --- Heading Styles --- */
 .p2e-heading-position {
   display: flex;
@@ -98,7 +106,7 @@
 .gs-p2e--line-4 {
   position: absolute;
   left: 0;
-  bottom: 225px;
+  bottom: 33%;
 }
 
 .p2e-games {

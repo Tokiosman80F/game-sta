@@ -1,7 +1,6 @@
 .gamex-card {
-  /* border: 2px solid red; */
   position: relative;
-  padding-top: 100px;
+  padding-top: 153px;
   margin-top: 118px;
   height: 910px;
   display: flex;
@@ -21,17 +20,12 @@
   width: 100%;
   color: white;
   display: flex;
-  /* border: 1px solid wheat; */
 }
 .gamex-content {
-  /* border: 1px solid red; */
   padding-right: 100px;
   width: 30%;
 }
-/* .gamex-content,
-.gamex-img {
-  flex: 0 0 1;
-} */
+
 .gamex-heading {
   font-size: 112px;
   line-height: 1.2;
