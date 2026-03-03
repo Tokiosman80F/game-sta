@@ -210,10 +210,10 @@
 
 @media (max-width: 425px) {
   .gs-dapp {
-    margin-top: -169px;
+    margin-top: -187px;
     /* z-index: 5; */
     padding-top: 250px;
-    padding-bottom: 120px;
+    padding-bottom: 215px;
     position: relative;
     background-color: var(--color-dark-600);
     clip-path: polygon(0 5%, 100% 2%, 100% 90%, 0% 100%);

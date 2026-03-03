@@ -442,7 +442,7 @@
     position: absolute;
     z-index: 10;
     bottom: 119px;
-    right: 8px;
+    right: -11px;
   }
   .button-outline {
     border: 1px solid white;

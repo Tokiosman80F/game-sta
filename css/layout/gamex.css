@@ -21,11 +21,12 @@
   width: 100%;
   color: white;
   display: flex;
-  border: 1px solid wheat;
+  /* border: 1px solid wheat; */
 }
 .gamex-content {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-right: 100px;
+  width: 30%;
 }
 /* .gamex-content,
 .gamex-img {
@@ -56,25 +57,36 @@
 .gamex-subheading {
   font-size: 32px;
   line-height: 1.4;
-  padding-left: 100px;
+  padding-left: 60px;
+  width: 550px;
 }
 .gamex-subheading a {
   color: #00b3e8;
   text-decoration: underline;
 }
 .gamex-img {
-  height: inherit;
+  /* height: inherit; */
 }
 .gamex-img img {
   width: 100%;
   /* max-width: ; */
-  height: inherit;
+  /* height: inherit; */
   z-index: 10;
   transform: rotate(81.52deg);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @media (max-width: 1024px) {
+  .gamex-card {
+    /* border: 2px solid red; */
+    position: relative;
+    padding-top: 122px;
+    margin-top: 118px;
+    height: 110%;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 65% 100%, 57% 87%, 0 100%);
+  }
   .gamex-heading {
     font-size: 80px;
     line-height: 1.2;
@@ -84,15 +96,63 @@
   .gamex-subheading {
     font-size: 20px;
     line-height: 1.4;
-    padding-left: 100px;
+    padding-left: 60px;
   }
 }
 
-@media (max-width: 764px) {
+@media (max-width: 886px) {
+  .gamex-wrapper {
+    /* height: 40vh; */
+    width: 100%;
+    color: white;
+    display: flex;
+    /* border: 1px solid wheat; */
+  }
+  .gamex-content {
+    /* width: 31%; */
+    /* border: 1px solid red; */
+    /* padding-right: 100px; */
+  }
   .gamex-heading {
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1.2;
     color: inherit;
     position: relative;
+  }
+  .gamex-subheading {
+    font-size: 16px;
+    line-height: 1.4;
+    padding-left: 14px;
+    width: 298px;
+    padding-top: 23px;
+  }
+  .gamex-heading-top,
+  .gamex-heading-middle,
+  .gamex-heading-bottom {
+    display: block;
+    transform: rotate(-6deg);
+    margin-bottom: -15px;
+  }
+}
+@media (max-width: 425px) {
+  .gamex-heading {
+    font-size: 31px;
+    line-height: 1.2;
+    color: inherit;
+    position: relative;
+  }
+  .gamex-heading-middle {
+    padding-left: 22px;
+  }
+  .gamex-heading-bottom {
+    padding-left: 72px;
+    margin-bottom: 0;
+  }
+  .gamex-subheading {
+    font-size: 10px;
+    line-height: 1.4;
+    padding-left: 32px;
+    max-width: 161px;
+    padding-top: 8px;
   }
 }
