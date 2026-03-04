@@ -1,5 +1,6 @@
 .distribution {
-  margin-top: 300px;
+  padding-top: 120px;
+  margin-top: 60px;
 }
 .distribution-content {
 }
@@ -74,13 +75,15 @@
     color: var(--color-dark-900);
   }
   .distribution {
-    margin-top: 401px;
+    padding-top: 275px;
+    margin-top: 60px;
   }
 }
 
 @media (max-width: 1000px) {
   .distribution {
-    margin-top: 300px;
+    /* margin-top: 0px; */
+    padding-top: 85px;
   }
   .distribution-sub-grid {
     position: absolute;
@@ -115,9 +118,9 @@
 }
 
 @media (max-width: 664px) {
-  .distribution {
+  /* .distribution {
     margin-top: 29px;
-  }
+  } */
   .distribution-sub-grid {
     position: absolute;
     left: -70%;
@@ -170,8 +173,9 @@
     right: 75px;
   }
 }
-@media (max-width: 335px) {
+@media (max-width: 400px) {
   .distribution {
-    margin-top: 74px;
+    margin-top: 190px;
+    padding-top: 94px;
   }
 }

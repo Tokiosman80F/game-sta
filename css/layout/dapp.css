@@ -1,5 +1,4 @@
 .gs-dapp {
-  /* margin-top: -258px; */
   z-index: 5;
   padding-top: 300px;
   padding-bottom: 262px;
@@ -7,33 +6,24 @@
   background-color: var(--color-dark-600);
   clip-path: polygon(0 14%, 100% 0%, 100% 90%, 0% 100%);
 }
-/* line */
 .gs-daap--line {
   position: absolute;
-  top: 10%;
+  top: 28%;
 }
 .gs-daap--line-icon {
 }
 
 @media (max-width: 1024px) {
+  .gs-daap--line {
+    top: 24%;
+  }
   .gs-daap--line-icon {
     width: 25%;
   }
 }
 @media (max-width: 512px) {
   .gs-daap--line {
-    position: absolute;
-    top: 8%;
-  }
-  .gs-daap--line-icon {
-    width: 20%;
-  }
-}
-
-@media (max-width: 512px) {
-  .gs-daap--line {
-    position: absolute;
-    top: 7%;
+    top: 14%;
   }
   .gs-daap--line-icon {
     width: 20%;
@@ -83,7 +73,7 @@
 }
 @media (max-width: 1060px) {
   .ribbon {
-    padding: 5px 10px;
+    padding: 2px 10px 5px 10px;
   }
   .ribbon-box {
     right: -9%;
@@ -94,16 +84,16 @@
     position: relative;
   }
   .ribbon span {
-    font-size: 8.34px;
-    line-height: 11px;
+    font-size: 11px;
   }
   .ribbon--top {
     position: relative;
-    top: -3px;
+    top: 2px;
+    z-index: 10;
   }
   .ribbon--bottom {
-    top: -10px;
-    left: 45px;
+    top: -14px;
+    left: 43px;
   }
 }
 
@@ -199,11 +189,11 @@
 }
 @media (max-width: 526px) {
   .gs-dapp {
-    margin-top: -189px;
+    margin-top: -219px;
     padding-top: 281px;
     padding-bottom: 262px;
     position: relative;
-    /* background-color: #264046; */
+
     clip-path: polygon(0 8%, 100% 1%, 100% 90% 90%, -1% 100%);
   }
 }
@@ -212,10 +202,13 @@
   .gs-dapp {
     margin-top: -187px;
     /* z-index: 5; */
-    padding-top: 250px;
-    padding-bottom: 215px;
+    padding-top: 180px;
+    padding-bottom: 120px;
     position: relative;
     background-color: var(--color-dark-600);
-    clip-path: polygon(0 5%, 100% 2%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 5%, 100% 2%, 100% 96%, 0% 100%);
+  }
+  .gs-daap--line {
+    top: 11%;
   }
 }

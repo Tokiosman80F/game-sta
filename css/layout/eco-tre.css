@@ -1,6 +1,5 @@
 /* --- SECTION WRAPPERS --- */
 .ecosystem {
-  padding-top: 144px;
   position: relative;
   min-height: 945px;
 }
@@ -56,11 +55,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* Fixed rgb(256) to rgb(255) */
   background: linear-gradient(
-    71deg,
-    rgb(255, 255, 255) 100%,
-    rgb(255, 255, 255) 88%
+    271deg,
+    rgba(0, 179, 232, 0) 0%,
+    rgba(87, 28, 227, 0.04) 100%
   );
 }
 
@@ -76,23 +74,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(
-    225deg,
-    hsl(194deg 100% 45%) 0%,
-    hsl(199deg 98% 46%) 8%,
-    hsl(204deg 96% 46%) 16%,
-    hsl(208deg 94% 47%) 23%,
-    hsl(213deg 93% 47%) 31%,
-    hsl(218deg 91% 47%) 39%,
-    hsl(223deg 89% 48%) 46%,
-    hsl(228deg 88% 48%) 54%,
-    hsl(233deg 86% 48%) 62%,
-    hsl(238deg 84% 49%) 69%,
-    hsl(243deg 83% 49%) 77%,
-    hsl(248deg 81% 49%) 85%,
-    hsl(253deg 80% 50%) 92%,
-    hsl(258deg 78% 50%) 100%
+  background: linear-gradient(
+    271deg,
+    rgba(0, 179, 232, 1) 0%,
+    rgba(87, 28, 227, 1) 100%
   );
+
   border-radius: 50%;
 }
 
@@ -102,19 +89,21 @@
   position: absolute;
   width: 388px;
   height: 388px;
-  background: white;
+  background-color: white;
   border-radius: 50%;
-  z-index: 1; /* Sits above the gradient but below the text */
+  z-index: 1;
 }
 
 /* --- CIRCLE CONTENT --- */
 .eco-tre-circle--h,
 .eco-tre-circle--p {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
   z-index: 2; /* Forces text to sit on top of the ::after overlay */
 }
 
 .eco-tre-circle--p {
+  top: 20%;
   display: block;
   width: 50%;
   text-align: start;
@@ -124,6 +113,7 @@
 }
 
 .eco-tre-circle--h {
+  top: 30%;
   font-size: 88px;
   line-height: 1;
   color: var(--color-dark-900);
@@ -153,11 +143,10 @@
 .eco-tre-ribbon--wrapper {
   position: absolute;
   width: 870px;
-  height: 167px; /* Cleaned up redundant auto height */
+  height: 167px;
   left: 50%;
-  bottom: 118px;
+  bottom: 186px;
 }
-
 .eco-tre-ribbon--box {
   width: 100%;
   height: 100%;
@@ -274,6 +263,11 @@
 }
 
 @media (max-width: 855px) {
+  .ecosystem {
+    /* position: relative; */
+    min-height: 800px;
+  }
+
   .eco-tre-heading--1 {
     font-size: 56px;
   }
@@ -332,6 +326,10 @@
 }
 
 @media (max-width: 558px) {
+  .ecosystem {
+    min-height: 544px;
+  }
+
   .eco-tre-ribbon--wrapper {
     position: absolute;
     width: 870px;

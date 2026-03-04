@@ -21,7 +21,7 @@
   max-width: 400px;
   position: absolute;
   right: -13%;
-  top: 15%;
+  top: 8%;
 }
 
 .gs-p2e--line img {
@@ -82,7 +82,7 @@
   font-size: 24px;
   line-height: 140%;
   color: var(--color-dark-900);
-  justify-content: end;
+  justify-content: center;
 }
 
 .p2e-sub-text {
@@ -91,7 +91,7 @@
   line-height: 130%;
   color: var(--color-dark-800);
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 
 /* --- Grid & Game Styles --- */
@@ -152,6 +152,9 @@
     padding: 35px 0;
     overflow-x: auto;
     flex-wrap: nowrap;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   .p2e-games-image img {
     flex-shrink: 0;
@@ -160,6 +163,9 @@
 }
 
 @media (max-width: 1000px) {
+  .gs-p2e--line-4 {
+    display: none;
+  }
   .p2e-heading__outline {
     font-size: 100px;
   }
@@ -172,11 +178,14 @@
   .gs-p2e--line {
     max-width: 200px;
     right: 0%;
-    top: 10%;
+    top: 7%;
   }
 }
 
 @media (max-width: 800px) {
+  .gs-futureApp {
+    padding: 50px 0px 60px 0px;
+  }
   .play2earn-heading-top p {
     margin-left: 0;
     text-align: start;
@@ -201,7 +210,7 @@
 @media (max-width: 670px) {
   .gs-p2e--line {
     max-width: 100px;
-    top: 7%;
+    top: 5%;
   }
 }
 
@@ -216,11 +225,14 @@
 
 @media (max-width: 520px) {
   .gs-p2e--line {
-    top: 4%;
+    top: 3%;
   }
 }
 
 @media (max-width: 425px) {
+  .p2e-games {
+    padding-top: 80px;
+  }
   .play2earn-heading-top p {
     font-size: 18px;
     line-height: 24px;
@@ -264,9 +276,6 @@
 
 @media (max-width: 375px) {
   .gs-p2e--line {
-    top: 3%;
-  }
-  .gs-p2e--line-4 {
-    display: none;
+    top: 2%;
   }
 }

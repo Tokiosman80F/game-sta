@@ -1,5 +1,18 @@
 .agency {
   margin-top: 120px;
+  position: relative;
+}
+.agency--line-right {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  bottom: 40%;
+}
+.agency--line-left {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  top: 40%;
 }
 .agency-wrapper {
   position: relative;
@@ -80,7 +93,23 @@
   font-size: 16px;
   line-height: 1;
 }
-
+@media (max-width: 1400px) {
+  .agency--line-left {
+    left: -264px;
+  }
+  .agency--line-right {
+    right: -265px;
+  }
+  .agency--line-right,
+  .agency--line-left {
+    width: 100%;
+    max-width: 400px;
+  }
+  .agency--line-right img,
+  .agency--line-left img {
+    width: 100%;
+  }
+}
 @media (max-width: 1000px) {
   .agency-logo {
     color: #fff;
@@ -128,6 +157,13 @@
 }
 
 @media (max-width: 632px) {
+  .agency--line-right img,
+  .agency--line-left img {
+    width: 80%;
+  }
+  .agency--line-right {
+    right: -340px;
+  }
   .agency-img-left {
     position: absolute;
     left: 19px;
@@ -223,6 +259,12 @@
   }
 }
 @media (max-width: 380px) {
+  .agency--line-left {
+    left: -242px;
+  }
+  .agency--line-right {
+    right: -311px;
+  }
   .agency-img-left {
     position: absolute;
     left: 1px;
