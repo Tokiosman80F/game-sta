@@ -222,12 +222,24 @@
     width: 100%;
     max-width: 328px;
   }
+
+  .roadmap-div6,
+  .roadmap-div12 {
+    padding-right: 0px;
+  }
+  .roadmap-div12 {
+    grid-column: span 5 / span 5;
+    display: flex;
+    justify-content: center;
+    margin-top: -111px;
+  }
 }
 @media (max-width: 1000px) {
   .roadmap-div6 img,
   .roadmap-div12 img {
     width: 90%;
   }
+
   .roadmap-div2 img,
   .roadmap-div4 img,
   .roadmap-div8 img,
@@ -246,7 +258,7 @@
     padding: 10.5px 0 7.5px 7.5px;
   }
   .rp-card-header {
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 2.4px;
     width: max-content;
     font-family: "Neue Machina", sans-serif;
@@ -279,6 +291,23 @@
     justify-content: space-evenly;
     padding-top: 0px;
   }
+  .rp-card-version {
+    background-color: #38484e;
+    padding: 9px 9px 3px 9px;
+    color: #fff;
+    font-family: "Neue Machina", sans-serif;
+    font-weight: 900;
+    font-size: 6px;
+    line-height: 1.1;
+    letter-spacing: 1.1px;
+    border-radius: 0 13px 0 0;
+  }
+  .roadmap-div12 {
+    grid-column: span 5 / span 5;
+    display: flex;
+    justify-content: center;
+    margin-top: -83px;
+  }
 }
 @media (max-width: 764px) {
   .roadmap-div1,
@@ -296,6 +325,13 @@
 }
 
 @media (max-width: 507px) {
+  .roadmap-heading h1 {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: var(--color-dark-900);
+    text-transform: uppercase;
+  }
   .rp-card-body {
     width: 100%;
     max-width: 328px;

@@ -87,10 +87,10 @@
   }
   .distribution-sub-grid {
     position: absolute;
-    left: -40%;
+    left: -46%;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    gap: 53px;
+    gap: 24px;
   }
 }
 @media (max-width: 774px) {
@@ -118,9 +118,6 @@
 }
 
 @media (max-width: 664px) {
-  /* .distribution {
-    margin-top: 29px;
-  } */
   .distribution-sub-grid {
     position: absolute;
     left: -70%;
@@ -157,18 +154,15 @@
   .distribution-grid--2 {
     position: relative;
     margin-left: 0;
-    /* transform: rotate(63deg); */
-    /* height: 10%; */
+
     width: 100%;
-    /* background-color: antiquewhite; */
   }
 
   .distribution-grid--2 img {
     position: absolute;
-    /* width: 100%; */
+
     transform: rotate(66deg);
-    /* object-fit: scale-down; */
-    /* border: 1px solid; */
+
     bottom: -249px;
     right: 75px;
   }

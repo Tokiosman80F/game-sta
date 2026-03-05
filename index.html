@@ -43,6 +43,11 @@
               <li class="nav__item">
                 <a href="" class="nav__link">contact</a>
               </li>
+              <li>
+                <button class="hidden nav__btn text-ecu-medium">
+                  Stake GSG
+                </button>
+              </li>
             </ul>
 
             <!-- Cta btn -->
@@ -1344,11 +1349,24 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const menuBtn = document.querySelector(".gs-menu-toggle-btn");
+        const menuToggle = document.querySelector(".gs-menu-toogle-btn");
         const navList = document.querySelector(".nav__list");
 
-        menuBtn.addEventListener("click", () => {
+        menuToggle.addEventListener("click", () => {
           navList.classList.toggle("active");
+
+          const icon = menuToggle.querySelector("img");
+          if (navList.classList.contains("active")) {
+            icon.src = "assets/icon/close-icon.svg";
+          } else {
+            icon.src = "assets/icon/hamburger.svg";
+          }
+        });
+
+        document.querySelectorAll(".nav__link").forEach((link) => {
+          link.addEventListener("click", () => {
+            navList.classList.remove("active");
+          });
         });
       });
     </script>

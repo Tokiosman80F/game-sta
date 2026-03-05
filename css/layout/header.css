@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 /* Header Section */
 .gs-header {
   position: relative;
@@ -164,6 +168,7 @@
   width: 24px;
   height: 24px;
 }
+
 /* =========HERO IMAGE======== */
 .gs-hero__image {
   /* border: 1px solid; */
@@ -315,11 +320,18 @@
   }
 }
 @media (max-width: 1000px) {
+  .hidden {
+    display: block;
+  }
   /* navbar */
   /* show hambuger */
   .gs-menu-toggle {
     display: block;
     z-index: 1001;
+  }
+  .gs-menu-toogle-btn img {
+    width: 28px;
+    height: 28px;
   }
   .nav__list,
   .nav__btn {
@@ -341,11 +353,21 @@
   }
 
   .nav__list.active {
+    display: flex;
     top: 0;
+  }
+  .nav__list.active .nav__btn {
+    display: block;
+    margin-top: 20px;
+    /* background: #000; */
   }
 
   .nav__link {
     font-size: 18px;
+  }
+  .gs-menu-toggle {
+    display: block;
+    cursor: pointer;
   }
 }
 
