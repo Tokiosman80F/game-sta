@@ -67,7 +67,18 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "BankGothic";
+  src: url("../../assets/fonts/BankGothic-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 
+.number-text {
+  font-family: "BankGothic", sans-serif;
+  font-weight: bold;
+  /* letter-spacing: -16px; */
+}
 .text-primary-normal {
   font-family: var(--font-primary);
   font-weight: normal;

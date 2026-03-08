@@ -84,6 +84,7 @@
 .roadmap-div17 {
   width: 328px;
 }
+
 /* card */
 .rp-card {
   display: flex;
@@ -250,7 +251,79 @@
     max-width: 100%;
   }
 }
-@media (max-width: 764px) {
+
+@media (max-width: 768px) {
+  .roadmap-parent {
+    display: flex;
+    flex-direction: column;
+  }
+  .roadmap-div2 img,
+  .roadmap-div4 img,
+  .roadmap-div8 img,
+  .roadmap-div10 img,
+  .roadmap-div14 img,
+  .roadmap-div16 img {
+    width: 50%;
+    max-width: 109px;
+    height: 90px;
+    transform: rotate(90deg);
+  }
+
+  .roadmap-div1,
+  .roadmap-div3,
+  .roadmap-div5,
+  .roadmap-div7,
+  .roadmap-div9,
+  .roadmap-div11,
+  .roadmap-div13,
+  .roadmap-div15,
+  .roadmap-div17 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .roadmap-div2,
+  .roadmap-div4,
+  .roadmap-div14,
+  .roadmap-div16 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-evenly;
+    padding-top: 0;
+  }
+  .roadmap-div12 {
+    grid-column: span 5 / span 5;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .roadmap-div2,
+  .roadmap-div4,
+  .roadmap-div14,
+  .roadmap-div16 {
+    display: flex;
+    flex-direction: column;
+    height: 112px;
+    justify-content: space-evenly;
+    /* padding: 31px 0; */
+  }
+  .roadmap-div8,
+  .roadmap-div10 {
+    display: flex;
+    flex-direction: column;
+    height: 112px;
+    justify-content: space-evenly;
+    /* padding: 32px 0; */
+  }
+  /* card body */
+  .rp-card-body {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0 13px 13px 13px;
+    padding: 19.5px 0 19.5px 19.5px;
+  }
+}
+/* @media (max-width: 764px) {
   .rp-card-body {
     width: 100%;
     max-width: 328px;
@@ -322,7 +395,7 @@
     width: 100%;
     max-width: 150px;
   }
-}
+} */
 
 @media (max-width: 507px) {
   .roadmap-heading h1 {
@@ -332,7 +405,7 @@
     color: var(--color-dark-900);
     text-transform: uppercase;
   }
-  .rp-card-body {
+  /* .rp-card-body {
     width: 100%;
     max-width: 328px;
     border-radius: 0 13px 13px 13px;
@@ -399,5 +472,5 @@
     display: flex;
     justify-content: center;
     margin-top: -44px;
-  }
+  } */
 }

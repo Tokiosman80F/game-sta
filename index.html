@@ -512,11 +512,12 @@
           <div class="distribution-grid">
             <!-- grid-1 -->
             <div class="distribution-grid--1">
-              <img
-                class="distribution-grid--1-img"
-                src="assets/images/80.svg"
-                alt=""
-              />
+              <div
+                class="distribution-number distribution-grid--1-text number-text"
+                data-target="80"
+              >
+                <span class="count">0</span><sup>%</sup>
+              </div>
               <p>
                 of the $GSG is distributed to the <br />player and investor in
                 accordance <br />with the agreed upon split.
@@ -529,11 +530,13 @@
             <!-- grid-3 -->
             <div class="distribution-grid--3 text-abzee">
               <p class="grid-3-p">The remaining</p>
-              <img
-                class="distribution-grid--3-img"
-                src="assets/images/20.svg"
-                alt=""
-              />
+
+              <div
+                class="distribution-number distribution-grid--3-text number-text"
+                data-target="20"
+              >
+                <span class="count">0</span><sup>%</sup>
+              </div>
               <p class="grid-3-p-2">
                 will be divided between the 3 <br />
                 functions of the GAMESTA treasury:
@@ -542,22 +545,26 @@
               <div class="distribution-sub-grid text-abzee">
                 <!-- 1 -->
                 <div class="sub-flex">
-                  <img src="assets/images/10.svg" alt="" />
+                  <div class="sub-flex-text number-text">10%</div>
+                  <!-- <img src="assets/images/10.svg" alt="" /> -->
                   <p>Burn in</p>
                 </div>
                 <!-- 2 -->
                 <div class="sub-flex">
-                  <img src="assets/images/10.svg" alt="" />
+                  <div class="sub-flex-text number-text">10%</div>
+                  <!-- <img src="assets/images/10.svg" alt="" /> -->
                   <p>Earn-2-Buy (E2B) fund</p>
                 </div>
                 <!-- 3 -->
                 <div class="sub-flex">
-                  <img src="assets/images/10.svg" alt="" />
+                  <div class="sub-flex-text number-text">10%</div>
+                  <!-- <img src="assets/images/10.svg" alt="" /> -->
                   <p>Burn back in new game development fund</p>
                 </div>
                 <!-- 4 -->
                 <div class="sub-flex">
-                  <img src="assets/images/70.svg" alt="" />
+                  <div class="sub-flex-text number-text">10%</div>
+                  <!-- <img src="assets/images/70.svg" alt="" /> -->
                   <p>Retained by GAMESTA treasury for deployment when needed</p>
                 </div>
               </div>
@@ -1351,17 +1358,20 @@
       document.addEventListener("DOMContentLoaded", () => {
         const menuToggle = document.querySelector(".gs-menu-toogle-btn");
         const navList = document.querySelector(".nav__list");
+        const icon = menuToggle.querySelector("img");
 
-        menuToggle.addEventListener("click", () => {
+        function toggleMenu() {
           navList.classList.toggle("active");
 
-          const icon = menuToggle.querySelector("img");
+          // Switching
           if (navList.classList.contains("active")) {
             icon.src = "assets/icon/close-icon.svg";
           } else {
             icon.src = "assets/icon/hamburger.svg";
           }
-        });
+        }
+
+        menuToggle.addEventListener("click", toggleMenu);
 
         document.querySelectorAll(".nav__link").forEach((link) => {
           link.addEventListener("click", () => {
@@ -1369,6 +1379,54 @@
           });
         });
       });
+
+      //------- Counter ---------
+
+      const distributionContent = document.querySelector(
+        ".distribution-content",
+      );
+      const distributionNumber = document.querySelectorAll(
+        ".distribution-number",
+      );
+      const counterSpeed = 500;
+
+      const startCounter = () => {
+        distributionNumber.forEach((disNum) => {
+          const countEl = disNum.querySelector(".count");
+
+          const updateCount = () => {
+            const target = +disNum.getAttribute("data-target");
+            const count = +countEl.innerText;
+
+            const inc = target / counterSpeed;
+
+            if (count < target) {
+              countEl.innerText = Math.ceil(count + inc);
+              setTimeout(updateCount, 10);
+            } else {
+              countEl.innerText = target;
+            }
+          };
+
+          updateCount();
+        });
+      };
+
+      // Intersection observer
+      const observerOptions = {
+        threshold: 0.5,
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startCounter();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      observer.observe(distributionContent);
     </script>
   </body>
 </html>

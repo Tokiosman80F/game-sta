@@ -28,6 +28,17 @@
 .distribution-grid--3-img {
   width: 100%;
 }
+.distribution-grid--1-text {
+  color: #00b3e8;
+}
+.distribution-grid--3-text {
+  color: #0ec742;
+}
+.distribution-grid--1-text,
+.distribution-grid--3-text {
+  font-size: 160px;
+  letter-spacing: -16px;
+}
 .distribution-grid--1 p,
 .distribution-grid--3 p {
   font-size: 24px;
@@ -65,6 +76,11 @@
   gap: 20px;
   align-items: start;
 }
+.sub-flex-text {
+  color: #0ec742;
+  letter-spacing: -2px;
+  font-size: 36px;
+}
 .sub-flex p {
   font-size: 14px;
 }
@@ -94,6 +110,10 @@
   }
 }
 @media (max-width: 774px) {
+  .distribution-grid--1-text,
+  .distribution-grid--3-text {
+    font-size: 100px;
+  }
   .distribution-heading h2 {
     font-size: 36px;
     line-height: 1.2;
